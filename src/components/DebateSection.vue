@@ -13,7 +13,7 @@
           class="toggle-btn"
           :class="{ active: mode === key }"
           type="button"
-          @click="mode = key"
+          @click="mode = key as DebateMode"
         >
           {{ label }}
         </button>
@@ -130,7 +130,7 @@ import { debateSection } from "../data/debate";
 
 type DebateMode = keyof typeof debateSection.toggle.labels;
 
-const mode = ref<DebateMode>(debateSection.toggle.defaultMode);
+const mode = ref<DebateMode>(debateSection.toggle.defaultMode as DebateMode);
 
 const iconMap = {
   ArrowDown,
@@ -142,8 +142,8 @@ const iconFor = (name?: string) => {
   return iconMap[name as keyof typeof iconMap] ?? null;
 };
 
-const leftSide = computed(() => debateSection.sides[0]);
-const rightSide = computed(() => debateSection.sides[1]);
+const leftSide = computed(() => debateSection.sides[0]!);
+const rightSide = computed(() => debateSection.sides[1]!);
 </script>
 
 <style scoped>

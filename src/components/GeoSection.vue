@@ -81,9 +81,6 @@ const activeMarker = computed(() => {
   return geoSection.map.markers.find((marker) => marker.id === activeMarkerId.value) ?? null;
 });
 
-const markerById = (id: string) => {
-  return geoSection.map.markers.find((marker) => marker.id === id);
-};
 </script>
 
 <style scoped>
