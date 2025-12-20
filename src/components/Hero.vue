@@ -3,7 +3,7 @@
         <div class="hero-grid">
             <div class="hero-left">
                 <div class="eyebrow">
-                    Лонгрид • Россия • <a class="eyebrow-link" href="#timeline">1682–1725</a>
+                    Россия • <a class="eyebrow-link" href="#timeline">1682–1725</a>
                 </div>
                 <h1 class="title">Пётр I: эпоха преобразований</h1>
                 <p class="subheadline">
